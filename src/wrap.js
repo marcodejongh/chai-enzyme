@@ -5,11 +5,11 @@ import ShallowTestWrapper from './ShallowTestWrapper'
 import ReactTestWrapper from './ReactTestWrapper'
 
 export default function wrap (el) {
-  if (el instanceof ShallowWrapper) {
+  if (el.constructor.name === 'ShallowWrapper') {
     return new ShallowTestWrapper(el)
   }
 
-  if (el instanceof ReactWrapper) {
+  if (el.constructor.name === 'ReactWrapper') {
     return new ReactTestWrapper(el)
   }
 
