@@ -2,8 +2,8 @@ import {mount, render, shallow} from 'enzyme'
 
 const defaults = {
   shallow: true,
-  mount: true,
-  render: true
+  mount: false,
+  render: false
 }
 
 function register (builder, desc, test, subject, options) {

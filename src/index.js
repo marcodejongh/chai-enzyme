@@ -102,6 +102,7 @@ export default function (debug = printDebug) {
     addAssertion(generic('style', 'CSS style property'), 'style')
     addAssertion(generic('state', 'state'), 'state')
     addAssertion(generic('prop', 'prop'), 'prop')
+    addAssertion(generic('type', 'type'), 'type')
 
     addAssertion(checked)
     addAssertion(className)

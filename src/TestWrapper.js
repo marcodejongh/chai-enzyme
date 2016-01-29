@@ -30,4 +30,9 @@ export default class TestWrapper {
   text () {
     return this.wrapper.text()
   }
+
+  type () {
+    console.log( this.wrapper.type());
+    return this.wrapper.type()
+  }
 }
